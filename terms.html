@@ -3,52 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms &amp; Conditions – Secure Fox</title>
+  <title>Privacy &amp; Terms – SecureFox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
-      line-height: 1.7;
-    }
-    .company-name {
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #1a1a1a;
-    }
-    h2 {
-      margin-top: 36px;
-      color: #1a1a1a;
-    }
-    p {
-      margin: 12px 0;
-    }
+    :root { --ink: #172033; --muted: #68738a; --orange: #ff9518; --pink: #ff4d61; --line: #e9eaf0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; color: var(--ink); font-family: "DM Sans", Arial, sans-serif; line-height: 1.55; background: radial-gradient(circle at 50% 8%, #fff1cc 0, transparent 27rem), radial-gradient(circle at 0 72%, #ffe4d0 0, transparent 25rem), #fcfbfa; }
+    .site-header { height: 68px; display: flex; align-items: center; border-bottom: 1px solid #e7e6e5; background: rgba(255,255,255,.8); }
+    .brand { width: min(100% - 40px, 774px); margin: 0 auto; display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+    .brand-mark, .hero-mark { background: linear-gradient(145deg, var(--orange), #ff7020 58%, var(--pink)); display: grid; place-items: center; box-shadow: 0 9px 18px rgba(230,105,40,.22); }
+    .brand-mark { width: 31px; height: 31px; border-radius: 10px; padding: 6px; }
+    .brand-mark img, .hero-mark img { width: 100%; height: 100%; }
+    .brand-text { display: grid; line-height: 1.08; }
+    .brand-text strong { font-size: 13px; letter-spacing: -.3px; }
+    .brand-text small { font-size: 9px; color: var(--muted); }
+    main { width: min(100% - 40px, 774px); margin: 0 auto; padding: 50px 0 66px; }
+    .hero { text-align: center; }
+    .hero-mark { width: 68px; height: 68px; border-radius: 19px; padding: 13px; margin: 0 auto 21px; }
+    h1, h2 { font-family: Fraunces, Georgia, serif; }
+    h1 { max-width: 440px; margin: 0 auto 13px; font-size: clamp(34px, 5vw, 45px); line-height: .92; letter-spacing: -2.4px; }
+    .intro { max-width: 505px; margin: 0 auto; color: #657391; font-size: 14px; }
+    .updated { margin: 12px 0 0; color: #8b94a6; font-size: 10px; }
+    .benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 35px 0 40px; }
+    .benefit { display: flex; align-items: flex-start; gap: 9px; min-height: 78px; padding: 13px 12px; text-align: left; border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.78); box-shadow: 0 2px 4px rgba(30,40,60,.015); }
+    .icon { flex: 0 0 24px; height: 24px; display: grid; place-items: center; border-radius: 8px; color: #e8860b; background: #fff2cb; }
+    .icon svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .benefit strong { display: block; font-size: 11px; line-height: 1.2; }
+    .benefit span { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; line-height: 1.25; }
+    .document { display: grid; gap: 24px; }
+    .policy-card { position: relative; padding: 26px 30px 24px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.88); box-shadow: 0 2px 5px rgba(30,40,60,.025); }
+    .card-icon { position: absolute; width: 35px; height: 35px; left: -11px; top: -11px; display: grid; place-items: center; border-radius: 11px; color: #fff; background: #ff9917; box-shadow: 0 8px 14px rgba(238,128,24,.25); }
+    .card-icon svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    h2 { margin: 0 0 10px; font-size: 21px; letter-spacing: -1px; }
+    p { margin: 0; color: var(--muted); font-size: 13px; }
+    p + p { margin-top: 13px; }
+    @media (max-width: 560px) { main { width: min(100% - 28px, 774px); padding-top: 35px; } .benefits { grid-template-columns: 1fr; margin: 28px 0; } .benefit { min-height: 62px; } .policy-card { padding: 25px 22px 22px; } }
   </style>
 </head>
 <body>
 
-  <div class="company-name">Secure Fox</div>
-
-  <h2>Terms &amp; Conditions</h2>
-  <p>
-    By using this app, you agree to use the VPN service only for lawful and authorized activities.
-    You must not use the service for fraud, abuse, harassment, unauthorized access, copyright
-    infringement, spam, or any other illegal purpose. You are responsible for your own traffic and
-    compliance with local laws. If you do not agree with these terms, please do not use the app.
-  </p>
-
-  <h2>Privacy Policy</h2>
-  <p>
-    We are committed to protecting your privacy. SecureFox does not log, monitor, or store any of
-    your browsing activity, connection timestamps, IP addresses, or traffic data. The only data we
-    collect is your account email (for authentication) and subscription status. Your data is never
-    sold or shared with third parties. All connections are encrypted end-to-end. You may delete your
-    account and all associated data at any time by contacting support.
-  </p>
+  <header class="site-header"><a class="brand" href="terms.html" aria-label="SecureFox home"><span class="brand-mark"><img src="assets/securefox-mark.svg" alt="" /></span><span class="brand-text"><strong>SecureFox</strong><small>Privacy &amp; Terms</small></span></a></header>
+  <main>
+    <section class="hero" aria-labelledby="page-title"><div class="hero-mark"><img src="assets/securefox-mark.svg" alt="SecureFox fox" /></div><h1 id="page-title">Privacy Policy &amp;<br />Terms of Service</h1><p class="intro">At SecureFox, we are committed to protecting your privacy and ensuring transparency in how we handle your data.</p><p class="updated">Last updated: September 17, 2026 · Effective immediately</p></section>
+    <section class="benefits" aria-label="SecureFox privacy commitments">
+      <article class="benefit"><span class="icon"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-5 10-5 10 5 10 5-3.5 5-10 5S2 12 2 12Z"/><circle cx="12" cy="12" r="2"/></svg></span><div><strong>No Tracking</strong><span>We never log your activity.</span></div></article>
+      <article class="benefit"><span class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><div><strong>End-to-End Encryption</strong><span>Your traffic stays private.</span></div></article>
+      <article class="benefit"><span class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong>Minimal Data</strong><span>Only your email, nothing else.</span></div></article>
+    </section>
+    <section class="document" aria-label="Legal documents">
+      <article class="policy-card"><span class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/></svg></span><h2>Terms &amp; Conditions</h2><p>By using this app, you agree to use the VPN service only for lawful and authorized activities. You must not use the service for fraud, abuse, harassment, unauthorized access, copyright infringement, spam, or any other illegal purpose. You are responsible for your own traffic and compliance with local laws. If you do not agree with these terms, please do not use the app.</p></article>
+      <article class="policy-card"><span class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><h2>Privacy Policy</h2><p>We are committed to protecting your privacy. SecureFox does not log, monitor, or store any of your browsing activity, connection timestamps, IP addresses, or traffic data.</p><p>The only data we collect is your account email (for authentication) and subscription status. Your data is never sold or shared with third parties. All connections are encrypted end-to-end. You may delete your account and all associated data at any time by contacting support.</p></article>
+    </section>
+  </main>
 
 </body>
 </html>

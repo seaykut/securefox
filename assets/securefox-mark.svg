@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SecureFox fox mark">
+  <defs>
+    <linearGradient id="fur" x1="20" y1="14" x2="108" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9a51a"/>
+      <stop offset=".52" stop-color="#ff6a1f"/>
+      <stop offset="1" stop-color="#eb3d63"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#fur)" d="M20 34 40 9l9 24c5-2 10-3 15-3s10 1 15 3l9-24 20 25-5 40c-3 25-20 40-39 40S28 99 25 74l-5-40Z"/>
+  <path fill="#fff8e8" d="M39 66c3-18 15-27 25-27s22 9 25 27c-4 20-14 31-25 31S43 86 39 66Z"/>
+  <path fill="#253347" d="M50 62c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5Zm28 0c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5Z"/>
+  <path fill="#253347" d="M58 76c2-3 10-3 12 0l-6 6-6-6Z"/>
+  <path fill="#f9d094" d="M31 31 40 19l5 19-14-7Zm66 0-9-12-5 19 14-7Z"/>
+</svg>
