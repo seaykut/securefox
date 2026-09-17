@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy &amp; Terms – SecureFox</title>
-  <meta http-equiv="refresh" content="0; url=index.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
@@ -40,10 +39,11 @@
     h2 { margin: 0 0 10px; font-size: 21px; letter-spacing: -1px; }
     p { margin: 0; color: var(--muted); font-size: 13px; }
     p + p { margin-top: 13px; }
+    .site-footer { width: min(100% - 40px, 558px); margin: 35px auto 0; padding: 27px 0 0; border-top: 1px solid #e6e8ec; text-align: center; color: var(--muted); font-size: 13px; }
     @media (max-width: 560px) { main { width: min(100% - 28px, 774px); padding-top: 35px; } .benefits { grid-template-columns: 1fr; margin: 28px 0; } .benefit { min-height: 62px; } .policy-card { padding: 25px 22px 22px; } }
   </style>
 </head>
-<body style="display:none">
+<body>
 
   <header class="site-header"><a class="brand" href="terms.html" aria-label="SecureFox home"><span class="brand-mark"><img src="assets/securefox-mark.svg" alt="" /></span><span class="brand-text"><strong>SecureFox</strong><small>Privacy &amp; Terms</small></span></a></header>
   <main>
@@ -58,6 +58,7 @@
       <article class="policy-card"><span class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><h2>Privacy Policy</h2><p>We are committed to protecting your privacy. SecureFox does not log, monitor, or store any of your browsing activity, connection timestamps, IP addresses, or traffic data.</p><p>The only data we collect is your account email (for authentication) and subscription status. Your data is never sold or shared with third parties. All connections are encrypted end-to-end. You may delete your account and all associated data at any time by contacting support.</p></article>
     </section>
   </main>
+  <footer class="site-footer">© 2026 SecureFox · Made with 🦊</footer>
 
 </body>
 </html>

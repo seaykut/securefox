@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="SecureFox shield logo">
+  <defs>
+    <linearGradient id="background" x1="20" y1="12" x2="238" y2="245" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6ab480"/><stop offset=".55" stop-color="#438b65"/><stop offset="1" stop-color="#2e7152"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="65" y1="40" x2="191" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a7e28d"/><stop offset=".55" stop-color="#50b29c"/><stop offset="1" stop-color="#247892"/>
+    </linearGradient>
+    <linearGradient id="fox" x1="81" y1="40" x2="179" y2="203" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c5ed89"/><stop offset=".4" stop-color="#74c98e"/><stop offset=".75" stop-color="#2598a4"/><stop offset="1" stop-color="#17617d"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="256" height="256" rx="42" fill="url(#background)"/>
+  <circle cx="175" cy="71" r="70" fill="#a1dd85" opacity=".18" filter="url(#soft)"/>
+  <path d="M128 31 204 61v59c0 53-31 86-76 106-45-20-76-53-76-106V61l76-30Z" fill="url(#shield)" opacity=".9"/>
+  <path d="M128 43 192 68v50c0 43-23 72-64 92-41-20-64-49-64-92V68l64-25Z" fill="none" stroke="#c5efab" stroke-width="6" opacity=".65"/>
+  <path d="M79 172c7-46 24-78 51-104l-1-27 22 23c11-8 22-13 34-17l-2 41c20 12 32 31 38 56l-30-6c-17 14-38 20-62 18l-50 16Z" fill="url(#fox)" stroke="#16546e" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M97 133c17-22 36-37 58-45 18 9 32 23 39 42-20-10-42-12-66-4l-31 7Z" fill="#8fda91" opacity=".75"/>
+  <path d="M115 72c-7 19-9 38-4 55m39-55c12 13 20 27 23 43" fill="none" stroke="#17576f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M162 108c8-2 16 0 22 5-8 3-15 4-22-5Zm-35 43c23 3 43 2 59-4-6 10-16 15-30 15-11 0-21-3-29-11Z" fill="#174e67"/>
+  <path d="M145 159c14 4 27 4 39-1-8 11-20 15-35 11" fill="#e4f6d3" opacity=".9"/>
+  <path d="M106 171c19-7 38-9 57-6-25 9-42 24-52 44-13-10-20-21-24-35l19-3Z" fill="#207e91"/>
+</svg>
